@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# 审计日志：客户的元数据，绝不进仓库
+*.jsonl
+audit*.log
+
+.DS_Store

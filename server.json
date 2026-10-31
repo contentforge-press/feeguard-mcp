@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.contentforge-press/feeguard-mcp",
+  "title": "FeeGuard",
+  "description": "Audit marketplace settlement CSVs for abnormal fee changes and report the USD overcharged per SKU.",
+  "repository": {
+    "url": "https://github.com/contentforge-press/feeguard-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "feeguard-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

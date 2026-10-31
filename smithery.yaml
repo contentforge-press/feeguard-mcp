@@ -1,0 +1,11 @@
+startCommand:
+  type: stdio
+  commandFunction: |-
+    () => ({ command: 'python3', args: ['-m', 'feeguard_mcp'] })
+  configSchema:
+    type: object
+    properties: {}
+    additionalProperties: false
+build:
+  dockerfile: Dockerfile
+  dockerBuildPath: .

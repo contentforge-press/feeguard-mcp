@@ -1,0 +1,13 @@
+{
+  "name": "feeguard-mcp",
+  "version": "0.1.0",
+  "description": "Audit marketplace settlement CSVs for abnormal fee changes. Three deterministic rules, no third-party dependencies.",
+  "mcpServers": {
+    "feeguard": {
+      "command": "python3",
+      "args": ["-m", "feeguard_mcp"],
+      "cwd": "${extensionPath}"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

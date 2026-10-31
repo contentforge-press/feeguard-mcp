@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feeguard-mcp"
+version = "0.1.0"
+description = "MCP server for e-commerce fee auditing: detects abnormal platform fee changes with three deterministic rules."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+# 刻意保持零依赖。判定要过安全审查，依赖树越短越好。
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+
+[project.scripts]
+feeguard-mcp = "feeguard_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/contentforge-press/feeguard-mcp"
+Repository = "https://github.com/contentforge-press/feeguard-mcp"
+
+[project.keywords]
+keywords = ["mcp", "mcp-server", "ecommerce", "amazon", "settlement", "fee", "audit"]
+
+[tool.setuptools.packages.find]
+include = ["feeguard_mcp*"]
